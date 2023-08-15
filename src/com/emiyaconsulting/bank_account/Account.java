@@ -11,6 +11,29 @@ public class Account {
     private String email;
     private String phoneNumber;
 
+    public Account() {
+        // Constructor chaining
+        this(12356799, 0.00, "Default Name",
+                "default@email.com", "123-456-7890");
+        System.out.println("Empty constructor called...");
+    }
+
+    public Account(long accountNumber, double accountBalance, String customerName, String email, String phoneNumber) {
+        System.out.println("Account constructor with parameters called...");
+        this.accountNumber = accountNumber;
+        this.accountBalance = accountBalance;
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public Account(String customerName, String email, String phoneNumber) {
+        this(999999999, 100.00, customerName, email, phoneNumber);
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
     public void depositFunds(double amount) {
         double v = this.accountBalance + amount;
         double newBalance = setAccountBalance(v);

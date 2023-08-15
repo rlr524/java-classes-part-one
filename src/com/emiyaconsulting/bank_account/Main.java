@@ -12,5 +12,21 @@ public class Main {
         madison.depositFunds(500.00);
 
         madison.withdrawFunds(200.00);
+
+        Account olivia = new Account(123456788, 600.00, "Olivia",
+                "olivia@gmail.com", "425-455-7555");
+
+        olivia.depositFunds(800.00);
+        double oliviaBalance = olivia.getAccountBalance();
+        System.out.println(oliviaBalance);
+
+        System.out.println("*********************************************************************************");
+        Account defaultAccount = new Account();
+        defaultAccount.depositFunds(100.00);
+        System.out.println(defaultAccount.getAccountBalance());
+
+        System.out.println("**********************************************************************************");
+        Account tzuyu = new Account("Tzuyu", "tzuyu@gmail.com", "123-456-7890");
+        System.out.println(tzuyu.getAccountBalance());
     }
 }

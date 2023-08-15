@@ -1,3 +1,5 @@
+package com.emiyaconsulting.car;
+
 public class Car {
     private String make;
     private String model;

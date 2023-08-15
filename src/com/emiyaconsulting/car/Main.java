@@ -1,3 +1,5 @@
+package com.emiyaconsulting.car;
+
 public class Main {
     public static void main(String[] args) {
         Car tesla = new Car();
