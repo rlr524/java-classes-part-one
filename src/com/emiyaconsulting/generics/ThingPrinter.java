@@ -8,6 +8,6 @@ public class ThingPrinter <T> {
     }
 
     public void PrintThing() {
-        System.out.println(thingToBePrinted);
+        System.out.println("***" + thingToBePrinted + "***");
     }
 }

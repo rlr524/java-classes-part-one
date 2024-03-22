@@ -2,7 +2,7 @@ package com.emiyaconsulting.generics;
 
 public class Main {
     public static void main(String[] args) {
-        ThingPrinter<String> myString = new ThingPrinter<>("Madison");
+        ThingPrinter<Integer> myString = new ThingPrinter<>(18);
         myString.PrintThing();
 
         System.out.println(23);
