@@ -4,11 +4,9 @@ import java.text.NumberFormat;
 import java.util.Arrays;
 
 /*
-The Murach Python book differentiates a Python list from an array in other languages
-by stating that lists can hold items of different types and arrays in other languages
-require all elements to be the same type, but this is not true at all. Below is an
-example of creating an array of type Object, allowing any type to be mixed into
-the array.
+The Murach Python book differentiates a Python list from an array in other languages by stating that lists can hold 
+items of different types and arrays in other languages require all elements to be the same type, but this is not true 
+at all. Below is an example of creating an array of type Object, allowing any type to be mixed into the array.
  */
 public class Main {
     public static void main(String[] args) {
@@ -20,6 +18,10 @@ public class Main {
         myObjects[3] = 3.50;
         myObjects[4] = "Goodbye";
         myObjects[5] = 55;
+
+        for (Object myObject : myObjects) {
+            System.out.println(myObject);
+        }
         
         // You can also declare an array literal and do not need to declare the size
         Object[] myOtherObjects = new Object[] {"Madison", 21, "Olivia", 20, 3.14, true};
