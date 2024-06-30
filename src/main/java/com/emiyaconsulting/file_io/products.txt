@@ -1,0 +1,7 @@
+apple
+1 red
+$0.99
+
+orange
+1 orange
+$1.29
